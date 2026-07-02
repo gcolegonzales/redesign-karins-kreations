@@ -43,7 +43,7 @@ and Twitter Card tags, a `<link rel="canonical">`, plus `robots.txt` and
 
 The canonical URL, `og:url`, sitemap `<loc>`, robots `Sitemap:` line, and the
 schema `url`/`image` all use the literal placeholder
-**`https://REPLACE-WITH-DOMAIN.com/`**. Before deploying, do a single
+**`https://karinskreations.com/`**. Before deploying, do a single
 find-and-replace of that placeholder with the real domain across `index.html`,
 `robots.txt` and `sitemap.xml`.
 
