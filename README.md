@@ -33,6 +33,20 @@ This concept fixes that with a fast, mobile-first, accessible site that:
 Just open **`index.html`** in any browser (double-click it). No build step, no
 dependencies, no server required.
 
+## SEO / deploy note
+
+On-page SEO is wired in: a unique `<title>` + meta description, one `<h1>`,
+JSON-LD structured data (`@type: Florist` with the real name, phone, address,
+opening hours, price range, area served and Facebook link), complete Open Graph
+and Twitter Card tags, a `<link rel="canonical">`, plus `robots.txt` and
+`sitemap.xml` at the repo root.
+
+The canonical URL, `og:url`, sitemap `<loc>`, robots `Sitemap:` line, and the
+schema `url`/`image` all use the literal placeholder
+**`https://REPLACE-WITH-DOMAIN.com/`**. Before deploying, do a single
+find-and-replace of that placeholder with the real domain across `index.html`,
+`robots.txt` and `sitemap.xml`.
+
 ## Real photos
 
 Karin's real photography lives on their token-blocked Facebook page and can't be
