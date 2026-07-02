@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karin's Kreations — Florist in Gonzales, Louisiana</title>
+  <meta name="description" content="Karin's Kreations is a family florist in Gonzales, LA, hand-designing fresh & silk arrangements for weddings, sympathy, everyday joys, and special occasions. Local delivery across Ascension Parish." />
+
+  <!-- Single Google Fonts link (acceptable per brief); site still works if it fails to load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Karin's Kreations home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34" role="img" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+              <path d="M20 34 C20 24 20 20 20 14" />
+              <path d="M20 22 C13 22 10 18 9 12 C16 12 19 15 20 21 Z" fill="currentColor" fill-opacity=".18"/>
+              <path d="M20 24 C27 24 30 20 31 14 C24 14 21 17 20 23 Z" fill="currentColor" fill-opacity=".12"/>
+            </g>
+            <g fill="currentColor">
+              <circle cx="20" cy="9" r="3.1"/>
+              <circle cx="15.4" cy="11.6" r="2.6" fill-opacity=".85"/>
+              <circle cx="24.6" cy="11.6" r="2.6" fill-opacity=".85"/>
+              <circle cx="20" cy="13.4" r="2.2" fill-opacity=".9"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Karin's Kreations</span>
+          <span class="brand-sub">Gonzales · Louisiana</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#studio">Our Studio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="tel:+12254031099">
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.24 1z"/></svg>
+          (225) 403-1099
+        </a>
+        <a class="btn btn-solid" href="#inquire">Request an arrangement</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <nav aria-label="Mobile">
+        <a href="#collections">Collections</a>
+        <a href="#studio">Our Studio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="mobile-menu-actions">
+        <a class="btn btn-ghost" href="tel:+12254031099">Call (225) 403-1099</a>
+        <a class="btn btn-solid" href="#inquire">Request an arrangement</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Family florist · since Gonzales grew up around us</p>
+        <h1>Flowers, arranged<br/>by hand — <em>for the<br/>moments that matter.</em></h1>
+        <p class="lede">
+          Weddings, sympathy tributes, everyday brighteners and every occasion in
+          between — each one designed fresh in our Weber City Road studio and
+          delivered across Ascension Parish.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-solid btn-lg" href="#inquire">Request an arrangement</a>
+          <a class="btn btn-line btn-lg" href="tel:+12254031099">or call the shop</a>
+        </div>
+        <ul class="hero-facts">
+          <li><strong>Fresh &amp; silk</strong><span>designed to order</span></li>
+          <li><strong>Local delivery</strong><span>across Ascension Parish</span></li>
+          <li><strong>Open 6 days</strong><span>Mon–Sat, closed Sun</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal">
+        <!-- IMG-NEEDED: hero.jpg (real photo lives on token-blocked Facebook). On-brand placeholder below. -->
+        <figure class="hero-photo" data-photo="assets/photos/hero.jpg">
+          <div class="photo-fallback hero-fallback" role="img" aria-label="A fresh seasonal arrangement from Karin's Kreations">
+            <svg class="bloom-illus" viewBox="0 0 300 360" aria-hidden="true">
+              <defs>
+                <radialGradient id="pet" cx="50%" cy="40%" r="60%">
+                  <stop offset="0%" stop-color="var(--blush-2)"/>
+                  <stop offset="100%" stop-color="var(--blush)"/>
+                </radialGradient>
+              </defs>
+              <g stroke="var(--green-2)" stroke-width="2.4" fill="none" stroke-linecap="round">
+                <path d="M150 340 C150 250 150 210 150 160"/>
+                <path d="M150 250 C110 240 92 210 88 176 C126 178 146 202 150 244"/>
+                <path d="M150 230 C190 222 208 194 214 162 C176 162 156 186 150 226"/>
+              </g>
+              <g>
+                <g transform="translate(150 118)">
+                  <g fill="url(#pet)" stroke="var(--rose)" stroke-width="1.2">
+                    <ellipse cx="0" cy="-30" rx="18" ry="30"/>
+                    <ellipse cx="0" cy="-30" rx="18" ry="30" transform="rotate(60)"/>
+                    <ellipse cx="0" cy="-30" rx="18" ry="30" transform="rotate(120)"/>
+                    <ellipse cx="0" cy="-30" rx="18" ry="30" transform="rotate(180)"/>
+                    <ellipse cx="0" cy="-30" rx="18" ry="30" transform="rotate(240)"/>
+                    <ellipse cx="0" cy="-30" rx="18" ry="30" transform="rotate(300)"/>
+                  </g>
+                  <circle r="13" fill="var(--gold)"/>
+                </g>
+                <g transform="translate(96 150)">
+                  <g fill="var(--sage-2)" stroke="var(--green-2)" stroke-width="1">
+                    <ellipse cx="0" cy="-18" rx="10" ry="18"/>
+                    <ellipse cx="0" cy="-18" rx="10" ry="18" transform="rotate(72)"/>
+                    <ellipse cx="0" cy="-18" rx="10" ry="18" transform="rotate(144)"/>
+                    <ellipse cx="0" cy="-18" rx="10" ry="18" transform="rotate(216)"/>
+                    <ellipse cx="0" cy="-18" rx="10" ry="18" transform="rotate(288)"/>
+                  </g>
+                  <circle r="7" fill="var(--gold)"/>
+                </g>
+                <g transform="translate(206 152)">
+                  <g fill="var(--blush-2)" stroke="var(--rose)" stroke-width="1">
+                    <ellipse cx="0" cy="-16" rx="9" ry="16"/>
+                    <ellipse cx="0" cy="-16" rx="9" ry="16" transform="rotate(72)"/>
+                    <ellipse cx="0" cy="-16" rx="9" ry="16" transform="rotate(144)"/>
+                    <ellipse cx="0" cy="-16" rx="9" ry="16" transform="rotate(216)"/>
+                    <ellipse cx="0" cy="-16" rx="9" ry="16" transform="rotate(288)"/>
+                  </g>
+                  <circle r="6" fill="var(--gold)"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <figcaption>Seasonal signature bouquet · designed in-studio</figcaption>
+        </figure>
+        <div class="hero-badge">
+          <span class="hero-badge-num">100%</span>
+          <span class="hero-badge-lbl">of reviewers recommend&nbsp;us</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true"><span>scroll</span></div>
+    </section>
+
+    <!-- ===== MARQUEE-FREE running line replaced with static motto band ===== -->
+    <section class="motto" aria-label="What we do">
+      <p>Weddings <span aria-hidden="true">·</span> Sympathy <span aria-hidden="true">·</span> Everyday <span aria-hidden="true">·</span> Proms &amp; Occasions <span aria-hidden="true">·</span> Plants <span aria-hidden="true">·</span> Gift Baskets</p>
+    </section>
+
+    <!-- ===== COLLECTIONS (editorial alternating rows, not icon cards) ===== -->
+    <section class="collections" id="collections">
+      <header class="section-head reveal">
+        <p class="eyebrow">The collections</p>
+        <h2>Four ways we say it with flowers</h2>
+        <p class="section-intro">Every arrangement is made to order — tell us the moment,
+          and we'll design for it. Here's where most of our work begins.</p>
+      </header>
+
+      <div class="collection-rows">
+
+        <article class="crow reveal" id="weddings">
+          <div class="crow-media">
+            <!-- IMG-NEEDED: weddings.jpg -->
+            <div class="photo-fallback tone-blush" data-photo="assets/photos/weddings.jpg" role="img" aria-label="Bridal bouquet placeholder">
+              <span class="fallback-tag">Weddings</span>
+            </div>
+          </div>
+          <div class="crow-body">
+            <p class="crow-index">01</p>
+            <h3>Weddings</h3>
+            <p>Bridal and bridesmaid bouquets, ceremony pieces, reception centerpieces
+              and boutonnières — designed around your colors, your venue and your budget.
+              We meet with couples one-on-one so the flowers feel like <em>you</em>.</p>
+            <ul class="crow-list">
+              <li>Bridal &amp; bridesmaid bouquets</li>
+              <li>Centerpieces &amp; reception florals</li>
+              <li>Boutonnières &amp; corsages</li>
+            </ul>
+            <a class="link-arrow" href="#inquire">Start a wedding inquiry <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="crow crow-reverse reveal" id="sympathy">
+          <div class="crow-media">
+            <!-- IMG-NEEDED: sympathy.jpg -->
+            <div class="photo-fallback tone-green" data-photo="assets/photos/sympathy.jpg" role="img" aria-label="Sympathy arrangement placeholder">
+              <span class="fallback-tag">Sympathy</span>
+            </div>
+          </div>
+          <div class="crow-body">
+            <p class="crow-index">02</p>
+            <h3>Sympathy &amp; Funeral</h3>
+            <p>Standing sprays, casket pieces, wreaths and tribute arrangements handled
+              with care and delivered on time to the funeral home or family. When words
+              are hard, we help you send something gentle.</p>
+            <ul class="crow-list">
+              <li>Standing sprays &amp; wreaths</li>
+              <li>Casket &amp; tribute pieces</li>
+              <li>Sympathy arrangements from&nbsp;$50</li>
+            </ul>
+            <a class="link-arrow" href="#inquire">Request a tribute <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="crow reveal" id="everyday">
+          <div class="crow-media">
+            <!-- IMG-NEEDED: everyday.jpg -->
+            <div class="photo-fallback tone-cream" data-photo="assets/photos/everyday.jpg" role="img" aria-label="Everyday bouquet placeholder">
+              <span class="fallback-tag">Everyday</span>
+            </div>
+          </div>
+          <div class="crow-body">
+            <p class="crow-index">03</p>
+            <h3>Everyday &amp; Just Because</h3>
+            <p>Fresh hand-tied bouquets, blooming plants and little surprises for the
+              in-between days — a birthday, a thank-you, a "thinking of you." Fresh or
+              silk, we build it while you wait or deliver it to their door.</p>
+            <ul class="crow-list">
+              <li>Fresh &amp; silk arrangements from&nbsp;$25</li>
+              <li>Green &amp; blooming plants from&nbsp;$30</li>
+              <li>Fruit &amp; gift baskets from&nbsp;$25</li>
+            </ul>
+            <a class="link-arrow" href="#inquire">Send something today <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="crow crow-reverse reveal" id="occasions">
+          <div class="crow-media">
+            <!-- IMG-NEEDED: occasions.jpg -->
+            <div class="photo-fallback tone-gold" data-photo="assets/photos/occasions.jpg" role="img" aria-label="Prom and occasion florals placeholder">
+              <span class="fallback-tag">Occasions</span>
+            </div>
+          </div>
+          <div class="crow-body">
+            <p class="crow-index">04</p>
+            <h3>Proms &amp; Occasions</h3>
+            <p>Corsages and boutonnières for prom season, plus anniversaries, new babies,
+              graduations and holidays. Come in with a dress color or a photo and we'll
+              match it — wristlet or pin-on, classic or bold.</p>
+            <ul class="crow-list">
+              <li>Prom corsages &amp; boutonnières</li>
+              <li>Anniversary &amp; celebration bouquets</li>
+              <li>New-baby gifts, plush &amp; balloons</li>
+            </ul>
+            <a class="link-arrow" href="#inquire">Ask about occasions <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== STUDIO / STORY (split full-bleed band) ===== -->
+    <section class="studio" id="studio">
+      <div class="studio-media reveal">
+        <!-- IMG-NEEDED: studio.jpg -->
+        <div class="photo-fallback studio-fallback" data-photo="assets/photos/studio.jpg" role="img" aria-label="Karin's Kreations studio and greenhouse placeholder">
+          <svg viewBox="0 0 120 120" width="120" height="120" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M60 96V54"/>
+              <path d="M60 70C44 68 36 56 34 40c18 2 26 14 26 30"/>
+              <path d="M60 62c16-2 24-14 26-30-18 2-26 14-26 30"/>
+              <path d="M40 96h40"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="studio-body reveal">
+        <p class="eyebrow">Our studio</p>
+        <h2>A working flower studio on Weber City Road</h2>
+        <p>Karin's Kreations isn't a warehouse pushing pre-boxed bouquets. It's a real
+          local studio — and a small greenhouse and nursery — where arrangements are
+          cut, conditioned and built by hand for the families of Gonzales and the wider
+          Ascension Parish.</p>
+        <p>Because everything is designed to order, no two pieces are quite the same.
+          Tell us the occasion, the colors and the feeling you're after, and we'll take
+          it from there.</p>
+        <div class="studio-stats">
+          <div><span class="stat-num">6</span><span class="stat-lbl">days a week, in-studio</span></div>
+          <div><span class="stat-num">Ascension</span><span class="stat-lbl">Parish-wide delivery</span></div>
+          <div><span class="stat-num">Fresh + silk</span><span class="stat-lbl">both, always to order</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY strip ===== -->
+    <section class="gallery" aria-label="A look at our work">
+      <div class="gallery-head reveal">
+        <p class="eyebrow">In the shop</p>
+        <h2>A look at our work</h2>
+      </div>
+      <div class="gallery-strip">
+        <!-- IMG-NEEDED: gallery-1..4.jpg (real photos on token-blocked Facebook) -->
+        <figure class="photo-fallback g-tone-1" data-photo="assets/photos/gallery-1.jpg" role="img" aria-label="Arrangement placeholder one"><span class="fallback-tag small">Fresh</span></figure>
+        <figure class="photo-fallback g-tone-2" data-photo="assets/photos/gallery-2.jpg" role="img" aria-label="Arrangement placeholder two"><span class="fallback-tag small">Wedding</span></figure>
+        <figure class="photo-fallback g-tone-3" data-photo="assets/photos/gallery-3.jpg" role="img" aria-label="Arrangement placeholder three"><span class="fallback-tag small">Plants</span></figure>
+        <figure class="photo-fallback g-tone-4" data-photo="assets/photos/gallery-4.jpg" role="img" aria-label="Arrangement placeholder four"><span class="fallback-tag small">Baskets</span></figure>
+      </div>
+      <p class="gallery-note">Real studio photography from our Facebook page is coming to this gallery. <!-- TODO: drop owner-approved photos into assets/photos/ --></p>
+    </section>
+
+    <!-- ===== PRICING (real table, not cards) ===== -->
+    <section class="pricing" id="pricing">
+      <header class="section-head reveal">
+        <p class="eyebrow">Starting points</p>
+        <h2>Honest, local pricing</h2>
+        <p class="section-intro">Every arrangement is custom, so final pricing depends on
+          flowers, size and season. These are the starting points our regulars know us by.</p>
+      </header>
+
+      <div class="price-table reveal" role="table" aria-label="Starting prices">
+        <div class="price-row price-head" role="row">
+          <span role="columnheader">Arrangement</span>
+          <span role="columnheader">Starting at</span>
+        </div>
+        <div class="price-row" role="row">
+          <span role="cell"><strong>Dozen roses</strong><em>a classic, always in season</em></span>
+          <span role="cell" class="price">$55</span>
+        </div>
+        <div class="price-row" role="row">
+          <span role="cell"><strong>Fresh flower arrangement</strong><em>hand-designed, your colors</em></span>
+          <span role="cell" class="price">$25</span>
+        </div>
+        <div class="price-row" role="row">
+          <span role="cell"><strong>Sympathy &amp; funeral</strong><em>sprays, wreaths &amp; tributes</em></span>
+          <span role="cell" class="price">$50</span>
+        </div>
+        <div class="price-row" role="row">
+          <span role="cell"><strong>Green &amp; blooming plants</strong><em>from our greenhouse</em></span>
+          <span role="cell" class="price">$30</span>
+        </div>
+        <div class="price-row" role="row">
+          <span role="cell"><strong>Fruit &amp; gift baskets</strong><em>gourmet &amp; seasonal</em></span>
+          <span role="cell" class="price">$25</span>
+        </div>
+      </div>
+      <p class="price-foot reveal">Weddings and large events are quoted individually after a quick consultation — just start an inquiry below.</p>
+    </section>
+
+    <!-- ===== INQUIRY (money feature) ===== -->
+    <section class="inquire" id="inquire">
+      <div class="inquire-grid">
+        <div class="inquire-intro reveal">
+          <p class="eyebrow">The money feature · real inquiry</p>
+          <h2>Request an arrangement</h2>
+          <p>Tell us what you have in mind and we'll get back to you with ideas and a
+            price — usually the same day we're open. No online checkout, no guesswork:
+            just a real florist designing for your moment.</p>
+
+          <div class="inquire-call">
+            <p>Prefer to talk it through?</p>
+            <a class="btn btn-solid btn-lg" href="tel:+12254031099">
+              <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.24 1z"/></svg>
+              Call (225) 403-1099
+            </a>
+            <p class="inquire-hours-mini">Mon–Fri 9–6 · Sat 9–2 · Closed Sunday</p>
+          </div>
+        </div>
+
+        <form class="inquire-form reveal" id="inquiryForm" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="opt">(optional)</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="occasion">Occasion</label>
+              <select id="occasion" name="occasion" required>
+                <option value="" disabled selected>Choose one…</option>
+                <option>Wedding</option>
+                <option>Sympathy / Funeral</option>
+                <option>Everyday / Just because</option>
+                <option>Prom / Occasion</option>
+                <option>Plants or gift basket</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Date needed</label>
+              <input type="date" id="date" name="date" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Choose a range…</option>
+                <option>Under $50</option>
+                <option>$50 – $100</option>
+                <option>$100 – $250</option>
+                <option>$250 +</option>
+                <option>Not sure — advise me</option>
+              </select>
+            </div>
+            <div class="field">
+              <span class="label-like">Delivery or pickup?</span>
+              <div class="radio-pair">
+                <label class="radio"><input type="radio" name="fulfilment" value="Delivery" checked /> <span>Delivery</span></label>
+                <label class="radio"><input type="radio" name="fulfilment" value="Pickup" /> <span>Pickup</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Tell us about it</label>
+            <textarea id="details" name="details" rows="4" placeholder="Colors, style, who it's for, delivery address or town, anything special…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-solid btn-lg btn-block">Send my request</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite">
+            We'll follow up by phone or email during shop hours. This starts a
+            conversation — nothing is charged here.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== VISIT / hours / location ===== -->
+    <section class="visit" id="visit">
+      <div class="visit-grid">
+        <div class="visit-info reveal">
+          <p class="eyebrow">Come see us</p>
+          <h2>Visit the shop</h2>
+
+          <div class="visit-block">
+            <h3>Find us</h3>
+            <address>
+              43053 Weber City Rd<br/>
+              Gonzales, LA 70737
+            </address>
+            <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&query=Karin%27s+Kreations+43053+Weber+City+Rd+Gonzales+LA+70737" target="_blank" rel="noopener">Open in Google Maps <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="visit-block">
+            <h3>Call</h3>
+            <a class="phone-big" href="tel:+12254031099">(225) 403-1099</a>
+          </div>
+
+          <div class="visit-block">
+            <h3>Delivery</h3>
+            <p>Local delivery across <strong>Ascension Parish</strong> — Gonzales,
+              Prairieville, St. Amant, Galvez and nearby. Ask us about your town when you inquire.</p>
+          </div>
+        </div>
+
+        <div class="visit-hours reveal">
+          <h3>Hours</h3>
+          <ul class="hours-list">
+            <li><span>Monday</span><span>9:00 – 6:00</span></li>
+            <li><span>Tuesday</span><span>9:00 – 6:00</span></li>
+            <li><span>Wednesday</span><span>9:00 – 6:00</span></li>
+            <li><span>Thursday</span><span>9:00 – 6:00</span></li>
+            <li><span>Friday</span><span>9:00 – 6:00</span></li>
+            <li><span>Saturday</span><span>9:00 – 2:00</span></li>
+            <li class="closed"><span>Sunday</span><span>Closed</span></li>
+          </ul>
+          <a class="btn btn-solid btn-block" href="#inquire">Request an arrangement</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">Karin's Kreations <span class="llc">LLC</span></span>
+        <p>Hand-designed flowers for weddings, sympathy, everyday and every occasion —
+          in the heart of Gonzales, Louisiana.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Explore</h4>
+          <a href="#collections">Collections</a>
+          <a href="#studio">Our Studio</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#visit">Visit</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="tel:+12254031099">(225) 403-1099</a>
+          <a href="#inquire">Request an arrangement</a>
+          <a href="https://www.facebook.com/KarinsKreationsLlc/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <div>
+          <h4>Find us</h4>
+          <p>43053 Weber City Rd<br/>Gonzales, LA 70737</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>© <span id="year">2026</span> Karin's Kreations LLC. All rights reserved.</p>
+      <p class="footer-credit">Redesign concept — an unsolicited design proposal.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
