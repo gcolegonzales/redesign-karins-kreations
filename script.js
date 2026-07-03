@@ -9,45 +9,47 @@
   var yr = document.getElementById('year');
   if (yr) yr.textContent = new Date().getFullYear();
 
-  /* ---- shrink-on-scroll header ---- */
+  /* ---- mobile menu (side drawer + scrim) ---- */
   var header = document.getElementById('siteHeader');
-  var lastKnown = 0, ticking = false;
-  function onScroll() {
-    lastKnown = window.scrollY;
-    if (!ticking) {
-      window.requestAnimationFrame(function () {
-        header.classList.toggle('scrolled', lastKnown > 24);
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  /* ---- mobile menu ---- */
   var toggle = document.getElementById('navToggle');
+  var drawer = document.getElementById('navDrawer');
   var menu = document.getElementById('mobileMenu');
+  var scrim = document.getElementById('navScrim');
+
+  /* Relocate the drawer clip-wrapper to be a direct child of <body> so no
+     backdrop-filter / transform / filter ancestor (e.g. .site-header) can
+     collapse its position:fixed to the header box. */
+  if (drawer && drawer.parentNode !== document.body) document.body.appendChild(drawer);
+
   function closeMenu() {
+    if (!toggle || !drawer) return;
     toggle.setAttribute('aria-expanded', 'false');
-    menu.classList.remove('open');
-    menu.setAttribute('hidden', '');
+    drawer.classList.remove('open');
+    if (menu) menu.classList.remove('open');
+    if (scrim) scrim.classList.remove('open');
     toggle.setAttribute('aria-label', 'Open menu');
+    if (header) header.classList.remove('nav-open');
   }
   function openMenu() {
+    if (!toggle || !drawer) return;
     toggle.setAttribute('aria-expanded', 'true');
-    menu.removeAttribute('hidden');
-    menu.classList.add('open');
+    drawer.classList.add('open');
+    // force reflow so the slide-in / fade-in transitions run from the closed state
+    void drawer.offsetWidth;
+    if (menu) menu.classList.add('open');
+    if (scrim) scrim.classList.add('open');
     toggle.setAttribute('aria-label', 'Close menu');
+    if (header) { header.classList.remove('header-hidden'); header.classList.add('nav-open'); }
   }
-  if (toggle && menu) {
+  if (toggle && drawer) {
     toggle.addEventListener('click', function () {
       var open = toggle.getAttribute('aria-expanded') === 'true';
       open ? closeMenu() : openMenu();
     });
-    menu.querySelectorAll('a').forEach(function (a) {
+    if (menu) menu.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', closeMenu);
     });
+    if (scrim) scrim.addEventListener('click', closeMenu);
     window.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') closeMenu();
     });
@@ -55,6 +57,25 @@
       if (window.innerWidth > 900) closeMenu();
     });
   }
+
+  /* ---- header: shrink + hide-on-scroll-down / reveal-on-scroll-up ---- */
+  var lastKnown = window.scrollY || 0, ticking = false;
+  function onScroll() {
+    var y = window.scrollY || 0;
+    header.classList.toggle('scrolled', y > 24);
+    var menuOpen = drawer && drawer.classList.contains('open');
+    if (menuOpen || y <= header.offsetHeight || y < lastKnown) {
+      header.classList.remove('header-hidden');   // top / scrolling up
+    } else if (y > lastKnown) {
+      header.classList.add('header-hidden');       // scrolling down
+    }
+    lastKnown = y;
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; window.requestAnimationFrame(onScroll); }
+  }, { passive: true });
+  onScroll();
 
   /* ---- scroll reveal ---- */
   var reveals = document.querySelectorAll('.reveal');
